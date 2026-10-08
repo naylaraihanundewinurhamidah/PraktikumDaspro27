@@ -9,7 +9,7 @@ public class studiKasus127 {
 
         System.out.print("Masukkan jumlah cup yang ingin dibeli: ");
         jumlahCup = scanner.nextInt();
-        System.out.print("Masukan uang bayar:");
+        System.out.print("Masukan uang bayar: Rp. ");
         uangBayar = scanner.nextInt();
 
         totalHarga = hargaPerCup * jumlahCup;
@@ -21,16 +21,16 @@ public class studiKasus127 {
 
         totalBayar = totalHarga - diskon;
 
-        System.out.println("Total harga: " + totalHarga);
-        System.out.println("Diskon: " + diskon);
-        System.out.println("Total bayar: " + totalBayar);
+        System.out.println("Total harga Rp. " + totalHarga);
+        System.out.println("Diskon Rp. " + diskon);
+        System.out.println("Total bayar Rp. " + totalBayar);
 
         if (uangBayar >= totalBayar) {
             kembalian = uangBayar - totalBayar;
-            System.out.println("Kembalian: " + kembalian);
+            System.out.println("Kembalian Rp. " + kembalian);
         } else {
             kurangBayar = totalBayar - uangBayar;
-            System.out.println("Uang tidak cukup, kurang Rp: " + kurangBayar);
+            System.out.println("Uang tidak cukup, kurang Rp. " + kurangBayar);
         }
 
     }
